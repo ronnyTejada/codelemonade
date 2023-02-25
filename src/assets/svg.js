@@ -220,3 +220,37 @@ export const ImgEditor = () => {
     </svg>
   );
 };
+
+export const CircleGreen = () => {
+  return (
+    <svg
+      width="13"
+      height="12"
+      viewBox="0 0 13 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13 6C13 9.31371 10.0899 12 6.5 12C2.91015 12 0 9.31371 0 6C0 2.68629 2.91015 0 6.5 0C10.0899 0 13 2.68629 13 6Z"
+        fill="#0EFD5F"
+      />
+    </svg>
+  );
+};
+
+export const CircleRed = () => {
+  return (
+    <svg
+      width="13"
+      height="12"
+      viewBox="0 0 13 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13 6C13 9.31371 10.0899 12 6.5 12C2.91015 12 0 9.31371 0 6C0 2.68629 2.91015 0 6.5 0C10.0899 0 13 2.68629 13 6Z"
+        fill="#FD390E"
+      />
+    </svg>
+  );
+};

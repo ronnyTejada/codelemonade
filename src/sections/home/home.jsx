@@ -20,7 +20,7 @@ const Header = styled.header`
   }
 `;
 
-const Title = styled.h1`
+export const Title = styled.h1`
   font-family: "Arvo", serif;
   color: ${white};
   font-weight: 800;

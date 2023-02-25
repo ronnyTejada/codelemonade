@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { light_gray } from "../../const/colors";
-import arktrac from '../../assets/imgs/arktrac.png'
+import arktrac from "../../assets/imgs/arktrac.png";
+
 const Section = styled.section`
   height: 100vh;
   background-color: ${light_gray};
@@ -9,10 +10,22 @@ const Section = styled.section`
   flex-direction: row;
   padding-left: 83px;
   align-items: center;
+  @media (max-width: 849px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+    height: 100%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
 `;
 
 const ArticleOne = styled.article`
   width: 50%;
+  @media (max-width: 849px) {
+    width: 100%;
+  }
 `;
 
 const ArticleTwo = styled.article`
@@ -31,13 +44,13 @@ const Text = styled.p`
   font-family: "Arvo";
   font-weight: 400;
   font-family: 16px;
-  color: #5F5F5F;
+  color: #5f5f5f;
 `;
 
 const Img = styled.img`
-   width: 100%;
-   height: 100%;
-`
+  width: 100%;
+  height: 100%;
+`;
 
 const Projects = () => {
   return (
@@ -53,8 +66,8 @@ const Projects = () => {
         <Text>Vuejs MongoDB Nodejs</Text>
       </ArticleOne>
       <ArticleTwo>
-        <div style={{width:'320px',height:'550px',borderRadius:'10px'}}>
-        <Img src={arktrac} alt="" />
+        <div style={{ width: "320px", height: "550px", borderRadius: "10px" }}>
+          <Img src={arktrac} alt="" />
         </div>
       </ArticleTwo>
     </Section>

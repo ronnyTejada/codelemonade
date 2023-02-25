@@ -23,7 +23,7 @@ const Navbar = () => {
     <Nav>
       <p style={{ color: "green" }}>{"{CODELOMONADE};"}</p>
 
-      <NavList /> 
+      {/* <NavList />  */}
 
       {/* {/* <ChooseLenguage/> */}
     </Nav>

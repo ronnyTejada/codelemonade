@@ -38,3 +38,12 @@ export const projects = [
         tools:['React Native']
     }
 ]
+
+export const services =[
+    {id:1,title:'Figma to Html',status:true},
+    {id:2,title:'Backend Develoment',status:true},
+    {id:3,title:'Mobile Development',status:true},
+    {id:4,title:'Digital Marketing',status:false},
+    {id:5,title:'Logo Design',status:false},
+    {id:6,title:'Ui/Ux',status:false},
+]
