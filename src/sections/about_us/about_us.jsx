@@ -3,8 +3,9 @@ import styled from "styled-components";
 import Button from "../../components/button";
 import { white } from "../../const/colors";
 import { ABOUT_US_TITLE } from "../../const/const";
+import { Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
-const Section = styled.section`
+const Section = styled(Element)`
   height: 50vh;
   background-color: ${white};
   display: flex;
@@ -52,7 +53,7 @@ const Text = styled.p`
 
 const About = () => {
   return (
-    <Section>
+    <Section name="ABOUT US">
       <ArticleOne>
         <br />
         <img

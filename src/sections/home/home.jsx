@@ -3,8 +3,11 @@ import styled from "styled-components";
 import { ImgEditor } from "../../assets/svg";
 import Button from "../../components/button";
 import { brown, pink, white } from "../../const/colors";
+import Typewriter from "typewriter-effect";
+import { Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
-const Header = styled.header`
+
+const Header = styled(Element)`
   height: 100vh;
   background-color: ${brown};
   display: flex;
@@ -52,21 +55,37 @@ const Article2 = styled.article`
 
 const Home = () => {
   return (
-    <Header>
+    <Header name="HOME">
       <Article>
+       
         <Title>
-          We help <span style={{ color: pink }}>Startups</span> &{" "}
-          <span style={{ color: pink }}>Entrepreneurs</span> to write {"<code>"}{" "}
+          We help{" "}
+          <span style={{ color: pink }}>
+            <Typewriter
+             options={{
+              strings: ['Startups'],
+              autoStart: true,
+              loop: true,
+            }}
+              
+            />
+          </span>{" "}
+          & <span style={{ color: pink }}> <Typewriter
+             options={{
+              strings: ['Entrepreneurs'],
+              autoStart: true,
+              loop: true,
+            }}
+              
+            /></span> to write{" "}
+          {"<code>"}{" "}
         </Title>
-        <Button/>
+        <Button />
       </Article>
 
-      
-     
-     <Article2>
-     <ImgEditor/>
-     </Article2>
-     
+      <Article2>
+        <ImgEditor />
+      </Article2>
     </Header>
   );
 };

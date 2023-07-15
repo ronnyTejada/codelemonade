@@ -1,7 +1,8 @@
-import React from "react";
+import React,{useState} from "react";
 import styled from "styled-components";
-import { white } from "../const/colors";
+import { pink, white } from "../const/colors";
 import { sections } from "../const/const";
+import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Ul = styled.ul`
   list-style: none;
@@ -9,18 +10,20 @@ const Ul = styled.ul`
   gap: 50px;
 `;
 
-const Li = styled.li`
+const Li = styled(Link)`
   font-family: "Anek Malayalam";
-  color: ${white};
+  font-weight: 800;
+  color: ${props=>props.selected?pink:white};
   cursor: pointer;
 `;
 
 const NavList = () => {
+  const [selected,setSelected]=useState('')
   return (
     <>
       <Ul>
         {sections.map((item) => {
-          return <Li>{item}</Li>;
+          return <Li to={item} spy={true} smooth={true} offset={-50} duration={1000} onClick={()=>setSelected(item)} selected={selected===item?true:false}>{item}</Li>;
         })}
       </Ul>
     </>

@@ -3,8 +3,10 @@ import styled from "styled-components";
 import Button from "../../components/button";
 import List from "../../components/listServices";
 import { brown, pink, white } from "../../const/colors";
+import Typewriter from "typewriter-effect";
+import { Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
-const Section = styled.section`
+const Section = styled(Element)`
   height: 100vh;
   background-color: ${brown};
   display: flex;
@@ -58,11 +60,20 @@ const Text = styled.p`
 
 const Services = () => {
   return (
-    <Section>
+    <Section name="SERVICES">
       <ArticleOne>
         <Title>
           Our Services <br />
-          <span style={{ color: pink }}>Software Development</span>
+          <span style={{ color: pink }}>
+          <Typewriter
+             options={{
+              strings: ['Frontend Development','Backend Development','Mobile Development','Figma to Html'],
+              autoStart: true,
+              loop: true,
+            }}
+              
+            />
+          </span>
         </Title>
         <Text>
           We only write code. We focus on one area of digital product creation,
