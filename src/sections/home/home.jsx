@@ -28,7 +28,10 @@ export const Title = styled.h1`
   color: ${white};
   font-weight: 800;
   font-size: clamp(2.3rem, 6vw, 4.5rem);
+  @media (max-width: 506px) {
+    font-size: clamp(3.0rem, 6vw, 4.5rem);
 
+  }
  
 `;
 
