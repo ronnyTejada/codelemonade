@@ -13,8 +13,10 @@ const Section = styled(Element)`
   flex-direction: row;
   padding-left: 83px;
   align-items: center;
+  overflow: hidden;
   @media (max-width: 849px) {
     flex-direction: column;
+    padding-left: 0;
     align-items: center;
     text-align: center;
     gap: 5%;
@@ -101,7 +103,7 @@ const Projects = () => {
           </AnimatePresence>
         </ArticleOne>
 
-        {/* <ArticleTwo>
+        <ArticleTwo>
           <AnimatePresence mode="wait">
             <motion.div
               key={show}
@@ -121,7 +123,7 @@ const Projects = () => {
               </div>
             </motion.div>
           </AnimatePresence>
-        </ArticleTwo> */}
+        </ArticleTwo>
       </Section>
 
       <div style={{ display: "flex", justifyContent: "center" }}>

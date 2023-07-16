@@ -22,10 +22,11 @@ const Section = styled(Element)`
 
 const Article = styled.article`
   display: flex;
-  width: 50%;
+  width: 99%;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+ 
 
 `;
 
@@ -48,7 +49,7 @@ const Text = styled.p`
   font-size: 15px;
   font-weight: 400;
   color: #787878;
-  width: 400px;
+  width: 100%;
 `;
 
 const About = () => {

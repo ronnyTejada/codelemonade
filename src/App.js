@@ -14,9 +14,9 @@ const Index = () => {
       <Navbar />
       <Home />
       <About />
-      {/* <Projects />
+      <Projects />
       <Services />
-      <Footer /> */}
+      <Footer />
     </>
   );
 };
@@ -27,7 +27,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/contact-us" element={<ContactUs />} />
-
       </Routes>
     </div>
   );

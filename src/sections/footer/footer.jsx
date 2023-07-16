@@ -34,7 +34,14 @@ const Ul = styled.ul`
   display: flex;
   gap: 50px;
   align-self: center;
+  justify-content: center;
   margin-bottom: 10px;
+  width: 90%;
+  flex-wrap: wrap;
+  /* @media (max-width: 590px) {
+   
+    flex-direction: column;
+  } */
 `;
 
 const Li = styled.li`

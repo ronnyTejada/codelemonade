@@ -19,6 +19,9 @@ const Section = styled(Element)`
     align-content:center;
     gap: 5%;
     height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
   }
   
 `;
@@ -35,11 +38,11 @@ const ArticleTwo = styled.article`
   justify-content: center;
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   font-family: "Arvo", serif;
   color: ${white};
   font-weight: 800;
-  font-size: 60px;
+  font-size: clamp(2.3rem, 6vw, 4.5rem);
 
   @media (max-width: 849px) {
    font-size: 40px;
@@ -52,10 +55,10 @@ const Title = styled.h1`
 
 const Text = styled.p`
   font-family: "Arvo";
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 400;
   color: #b6b6b6;
-  width: 400px;
+  width: 90%;
 `;
 
 const Services = () => {
