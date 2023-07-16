@@ -21,3 +21,9 @@
   padding-bottom: 3%;
 
 }
+
+.web__logo{
+  display: none;
+  font-weight: 800px;
+  font-size: 25px;
+}

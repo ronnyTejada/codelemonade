@@ -5,10 +5,11 @@ import NavList from "../../components/Nav";
 import { LOGO } from "../../const/const";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { GoThreeBars } from "react-icons/go";
 
 
 const Nav = styled(motion.div)`
-  background-color: red;
+ 
   height: 93px;
   display: flex;
   justify-content: space-between;
@@ -18,10 +19,15 @@ const Nav = styled(motion.div)`
   position: fixed; 
   width: 96%;
 
-
   @media (max-width: 658px) {
     &p{
       display: none;
+    }
+  }
+
+  @media (max-width: 849px) {
+    .web__logo{
+      display: block;
     }
   }
   
@@ -53,7 +59,9 @@ const Navbar = () => {
 
       </Link>
 
-      <NavList /> 
+      {/* <NavList />  */}
+      <GoThreeBars className="web__logo" onClick={()=>''}/>
+
 
       {/* <ChooseLenguage/> */}
     </Nav>

@@ -54,7 +54,7 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <Image src={LOGO} />
-      <Ul>
+      {/* <Ul>
         {sections.map((item) => {
           return (
             <Li
@@ -65,7 +65,7 @@ const Footer = () => {
             </Li>
           );
         })}
-      </Ul>
+      </Ul> */}
       <div style={{marginBottom:'10px'}}>
         <Link href="https://www.tiktok.com/@codelemonade?lang=en" target="_blank">
           <FaTiktok style={{ fontSize: 25, marginRight: 10 }} />

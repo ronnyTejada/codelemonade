@@ -101,7 +101,7 @@ const Projects = () => {
           </AnimatePresence>
         </ArticleOne>
 
-        <ArticleTwo>
+        {/* <ArticleTwo>
           <AnimatePresence mode="wait">
             <motion.div
               key={show}
@@ -121,7 +121,7 @@ const Projects = () => {
               </div>
             </motion.div>
           </AnimatePresence>
-        </ArticleTwo>
+        </ArticleTwo> */}
       </Section>
 
       <div style={{ display: "flex", justifyContent: "center" }}>

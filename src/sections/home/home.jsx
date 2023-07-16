@@ -27,11 +27,9 @@ export const Title = styled.h1`
   font-family: "Arvo", serif;
   color: ${white};
   font-weight: 800;
-  font-size: 70px;
+  font-size: clamp(2.3rem, 6vw, 4.5rem);
 
-  @media (max-width: 510px) {
-    font-size: 40px;
-  }
+ 
 `;
 
 const Article = styled.article`
@@ -49,7 +47,7 @@ const Article2 = styled.article`
     width: 80%;
   }
   @media (max-width: 510px) {
-    width: 100%;
+    display: none;
   }
 `;
 

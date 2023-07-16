@@ -14,9 +14,9 @@ const Index = () => {
       <Navbar />
       <Home />
       <About />
-      <Projects />
+      {/* <Projects />
       <Services />
-      <Footer />
+      <Footer /> */}
     </>
   );
 };
